@@ -14,6 +14,8 @@ export const getHeroesByName = (name) => {
         hero.characters.toLowerCase().includes(name)
       ) {
       return hero;
+    } else {
+      return null;
     }
   });
 }
