@@ -12,7 +12,7 @@ export const SearchScreen = ({ history }) => {
 
   const { q = '' } = parse(location.search);
   
-  const [values, handleInputChange] = useForm({searchText: ''})
+  const [values, handleInputChange] = useForm({searchText: q})
   
   let { searchText } = values;
   
