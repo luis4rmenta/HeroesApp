@@ -15,7 +15,7 @@ describe('Pruebas en <PrivateRoute />', () => {
     const wrapper = mount(
       <MemoryRouter>
         <PrivateRoute 
-          isAuthenticated={ true }
+          isAuthenticated
           component={ () => <span>Listo</span> }
           { ...props }
         />
